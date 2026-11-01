@@ -62,7 +62,7 @@ use crate::simulation::{AnchorReport, CrossSectionRow, MetricsRow, SimulationRes
 /// runvault 上の実験名．`runvault path --experiment` に渡す値でもある．
 pub const EXPERIMENT: &str = "edmondson-psafety";
 /// リポジトリの安定 id．git remote の名前とは独立に固定する．
-pub const REPO_ID: &str = "edmondson1999";
+pub const REPO_ID: &str = "rep-edmondson1999";
 /// 分野．個人属性・チーム網・スケジューラ・観察者ノイズを乱数で引くので
 /// `simulation` (= `master_seed` が必須)．
 pub const DOMAIN: &str = "simulation";
@@ -96,7 +96,7 @@ pub fn replication() -> Replication {
             "efficacy-is-discriminant",
             "Team efficacy does not explain learning behavior once psychological safety is controlled",
         ))
-        .obsidian_note("研究/98_論文レポート/80-再現実験/実装完了/edmondson1999/設計書.md")
+        .obsidian_note("研究/98_論文レポート/80-再現実験/実装完了/rep-edmondson1999/設計書.md")
 }
 
 /// 原著が報告した値のうち，この実装が run 1 本の中で直接測るもの．
